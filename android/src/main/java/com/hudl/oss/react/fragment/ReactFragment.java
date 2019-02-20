@@ -194,6 +194,15 @@ public class ReactFragment extends Fragment implements PermissionAwareActivity {
     }
 
     /**
+     * Helper to get props passed to the React Native Component 
+     */
+    public Bundle getAppProperties(){
+        return mReactRootView.getAppProperties();
+    }
+
+
+
+    /**
      * Helper to forward onKeyUp commands from our host Activity.
      * This allows ReactFragment to handle double tap reloads and dev menus
      *
