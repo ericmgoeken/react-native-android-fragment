@@ -188,6 +188,9 @@ public class ReactFragment extends Fragment implements PermissionAwareActivity {
      * Helper to get props passed to the React Native Component 
      */
     public Bundle getAppProperties(){
+        if( mReactRootView==null) {
+            return null;
+        }
         return mReactRootView.getAppProperties();
     }
 
